@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <title>Weather</title>
+</head>
+
+<body class="vh-100">
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+    <h1 class="text-light">Weather Dashboard</h1>
+  </nav>
+  <div class="row mx-0 h-75">
+    <div class="col-md-4 bg-light">
+      <form>
+        <div class="form-group col-sm-6">
+          <label class="font-weight-bolder h4" for="search">Search for a City:</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="search">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <ul id="searchHistory" class="list-group pl-3">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <div class="row h-50 pt-3 pl-3">
+        <div class="card flex-fill bd-highlight">
+          <div class="card-body">
+            <div class="card-title">
+              <span class="h2">Atlanta (4/11/20)</span>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" >
+            </div>
+            <p class="card-text">Temperature: <span id="currentTemperature"></span></p>
+            <p class="card-text">Humidity: <span id="currentHumidity"></span></p>
+            <p class="card-text">Wind Speed: <span id="currentWindSpeed"></span></p>
+            <p class="card-text">UV Index: <span id="currentUVIndex"></span></p>
+          </div>
+        </div> <span></span>
+      </div>
+      <h3 class="pt-3 pl-3">5 Day Forecast:</h3>
+      <div class="row px-3">
+        <div id="currentDate" class="card-deck flex-fill">
+          <div id="dayOne" class="card text-white bg-primary">
+            <div class="card-body">
+              <h5 class="card-title">Test</h5>
+              <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" >
+              <p class="card-text">Temp: <span class="temp"></span></p>
+              <p class="card-text">Humidity: <span class="humid"></span></p>
+            </div>
+          </div>
+          <div id="dayTwo" class="card text-white bg-primary">
+            <div class="card-body">
+              <h5 class="card-title">Test</h5>
+              <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" >
+              <p class="card-text">Temp: <span class="temp"></span></p>
+              <p class="card-text">Humidity: <span class="humid"></span></p>
+            </div>
+          </div>
+          <div id="dayThree" class="card text-white bg-primary">
+            <div class="card-body">
+              <h5 class="card-title">Test</h5>
+              <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" >
+              <p class="card-text">Temp: <span class="temp"></span></p>
+              <p class="card-text">Humidity: <span class="humid"></span></p>
+            </div>
+          </div>
+          <div id="dayFour" class="card text-white bg-primary">
+            <div class="card-body">
+              <h5 class="card-title">Test</h5>
+              <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" >
+              <p class="card-text">Temp: <span class="temp"></span></p>
+              <p class="card-text">Humidity: <span class="humid"></span></p>
+            </div>
+          </div> <span></span>
+          <div id="dayFive" class="card text-white bg-primary">
+            <div class="card-body">
+              <h5 class="card-title">Test</h5>
+              <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" >
+              <p class="card-text">Temp: <span class="temp"></span></p>
+              <p class="card-text">Humidity: <span class="humid"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
